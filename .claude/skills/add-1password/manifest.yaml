@@ -1,0 +1,10 @@
+skill: 1password
+version: 1.0.0
+description: "1Password vault access via service account token"
+core_version: 0.1.0
+modifies:
+  - src/container-runner.ts
+  - container/agent-runner/src/index.ts
+structured: {}
+conflicts: []
+depends: []
