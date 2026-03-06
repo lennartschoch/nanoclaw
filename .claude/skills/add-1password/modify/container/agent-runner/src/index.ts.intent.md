@@ -10,7 +10,7 @@ Added the 1Password MCP server to the agent's available tools so it can read ite
   ```typescript
   '1password': {
     command: 'npx',
-    args: ['-y', '@1password/mcp'],
+    args: ['-y', '@takescake/1password-mcp'],
     env: {
       OP_SERVICE_ACCOUNT_TOKEN: sdkEnv['OP_SERVICE_ACCOUNT_TOKEN'] || '',
     },

@@ -5,7 +5,7 @@ description: Add 1Password vault access to NanoClaw using a service account toke
 
 # Add 1Password Integration
 
-This skill gives the container agent access to 1Password vault items via the `@1password/mcp` MCP server. Authentication uses a service account token (no OAuth, no browser flow).
+This skill gives the container agent access to 1Password vault items via the `@takescake/1password-mcp` MCP server. Authentication uses a service account token (no OAuth, no browser flow).
 
 ## Phase 1: Pre-flight
 
@@ -133,7 +133,7 @@ tail -f logs/nanoclaw.log | grep -iE "(1password|op_)"
 
 ### npx takes too long on first use
 
-The first invocation downloads `@1password/mcp`. Subsequent calls use the npx cache. This is expected.
+The first invocation downloads `@takescake/1password-mcp`. Subsequent calls use the npx cache. This is expected.
 
 ## Removal
 
